@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-model = load_model(os.path.join(BASE_DIR, "dogbreed_model.h5"))
+model = load_model(os.path.join(BASE_DIR, "Breed_model.h5"))
 
 with open(os.path.join(BASE_DIR, "class_indices.json"), "r") as f:
     class_indices = json.load(f)
